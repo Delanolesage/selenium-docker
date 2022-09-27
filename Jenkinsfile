@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                bat "docker build -t='olatundji/selenium-docker-bdd' ."
+                bat "docker build -t olatundji/selenium-docker-bdd ."
             }
         }
         stage('Push Image') {
